@@ -11,7 +11,10 @@ var favColor = prompt('Qual\'è il tuo colore preferito?');
 console.log(favColor);
 
 //mostrare pwd nomecognomecolore21
-var stringNumberPwd = '21';
+var pwd = (userName + lastName + favColor).toLowerCase();
+console.log(pwd);
 
-var pwdGen = document.getElementById('pwd');
-pwdGen.innerHTML = (userName + lastName + favColor + stringNumberPwd).toLowerCase();
+var pwdNumber = pwd.length;
+console.log(pwdNumber);
+
+var pwdGen = document.getElementById('pwd').innerHTML = pwd + pwdNumber
